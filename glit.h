@@ -11,7 +11,7 @@ using std::string;
 using std::string_view;
 using std::vector;
 
-constexpr vector<uint8_t> operator"" _hex(const char* chars, const size_t len) {
+static constexpr vector<uint8_t> operator"" _hex(const char* chars, const size_t len) {
 	vector<uint8_t> data;
 	string str(chars, len);
 
